@@ -12,9 +12,11 @@ DROP TABLE first_table;
 DROP TABLE IF EXISTS second_table;
 CREATE TABLE IF NOT EXISTS second_table(
 	id INT PRIMARY KEY AUTO_INCREMENT,
-    firstname VARCHAR(45),
+    firstname VARCHAR(45) NOT NULL,
     lastname VARCHAR(45)
 ) ENGINE=InnoDB DEFAULT CHARACTER SET = utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+-- We usually use InnoDB for tables
+-- The CHARACTER SET (CHARSET) and COLLATE will be inheritated from the Schema (DB) but we can specify for each table as well
 
 INSERT INTO second_table(firstname, lastname) VALUES
 			('عباس', 'مقدم'), ('کاوه', 'رایگان'), ('سعید', 'جیدری'),
