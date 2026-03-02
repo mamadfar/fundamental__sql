@@ -1,0 +1,38 @@
+SELECT 3;
+
+SELECT 3+5;
+
+SELECT 5/3;
+
+SELECT 10 DIV 2;
+
+SELECT 5 MOD 3; -- OR 5 % 3
+
+SELECT '6' + '4'; -- It's not like JavaScript which converts string to number
+
+SELECT CONCAT('6', '4');
+
+SELECT '\'';
+
+SELECT 'a\nb';
+
+SELECT TRUE, FALSE;
+
+SELECT TRUE AND FALSE;
+
+SELECT TRUE XOR FALSE;
+
+SELECT TRUE XOR TRUE;
+
+/*
+	0 Means False
+    1 Means True 
+*/
+
+SELECT NULL OR NULL, NULL AND NULL, NOT NULL, NULL XOR NULL;
+
+SELECT NULL OR FALSE, NULL OR TRUE, NULL AND FALSE, NULL AND TRUE;
+
+SELECT 2 + NULL, NULL / 4, NULL * 4;
+
+SELECT CONCAT('a', NULL);
